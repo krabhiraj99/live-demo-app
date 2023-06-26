@@ -1,19 +1,27 @@
 {
   "name": "live-demo-app",
   "version": "0.1.0",
+  "main": "main.js",
   "private": true,
+  "vinceLiveApp": {
+    "name": "abhiraj-demo",
+    "basePath": "apps"
+  },
   "scripts": {
+    "build-route": "node .build/routes.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@nuxt/kit": "^3.4.3",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
